@@ -43,7 +43,7 @@
             <section>
               <section>
                 <h2>Large deformation modelling in geomechanics</h2>
-                <h3>MPM, LBM-DEM, and LEM</h3>
+                <h3>MPM and LBM-DEM</h3>
                 <p>
                   <br/>Krishna Kumar, <a href="mailto:kks32@cam.ac.uk">kks32@cam.ac.uk</a>
                   <br/>University of Cambridge
@@ -75,9 +75,9 @@
               <section>
                 <h3>Cambridge-Berkeley Computational Geomechanics</h3>
                 <ul>
+                  <li> Material Point Method </li>
                   <li> Lattice-Boltzmann + Discrete Element Method </li>
                   <li> Finite Element Method - Thermo-Hydro Mechanical Coupling</li>
-                  <li> Material Point Method </li>
                   <li> Lattice Element Method </li>
                 </ul>
                 <figure>
@@ -87,6 +87,52 @@
                 </figure>
               </section>
 
+
+              <!-- Lattice Element Method -->
+              <section>
+                <h2>Lattice Element Method</h2>
+                <div style="float: left; width: 50%;">
+	              <figure>
+	                 <img style = "border:0;" src="images/lem.png" style="width:80%">
+	              </figure>
+	              </div>
+                <div style="float: right; width: 50%;">
+	          <figure>
+	            <img style = "border:0;" src="images/voro.png" width="100%">
+	          </figure>
+	        </div>
+              </section>
+
+              <!-- Tension test -->
+              <section>
+                <h2>LEM: Tension test (Log-Normal 1.0)</h2>
+                <div style="float: left; width: 50%;">
+                  <video id="lem_ln1"  width="100%">
+                    <source src="media/tension_ln1.0_disp.webm" type="video/webm">
+                      Your browser does not support the video tag.
+                  </video>
+	        </div>
+                <div style="float: right; width: 50%;">
+                  <video id="lem_ln1_crack" width="100%">
+                    <source src="media/tension_ln1.0_crack.webm" type="video/webm">
+                      Your browser does not support the video tag.
+                  </video>
+	        </div>
+                <div class="media-buttons">
+                  <input type="button" id="play-button" onclick="PlayVideo('lem_ln1');PlayVideo('lem_ln1_crack')"; this.disable=true; pause-button.disable=false; value="Play" />
+                  <input type="button" id="pause-button" onclick="PauseVideo('lem_ln1');PauseVideo('lem_ln1_crack')"; this.disable=true; play-button.disable=false; value="Pause" />
+                </div>
+              </section>
+
+              <!-- LEM Hydraulic fracturing -->
+              <section>
+                <h2>LEM hydraulic fracturing</h2>
+                <video  width="100%" controls loop>
+                  <source src="media/lem.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Wong et al., 2016</p>
+              </section>
 
               <!-- ABM -->
               <section>
@@ -162,6 +208,10 @@
               </section>
 
               <section>
+                <h2>Oso landslide (2014)</h2>
+	               <img src="images/oso_landslide.png" width="80%">
+              </section>
+              <section>
                 <h2>Granular column collapse</h2>
 	        <img style = "border:0;" src="images/column_collapse.png" width="80%">
               </section>
@@ -186,34 +236,34 @@
               </section>
 
               <!-- Discrete Element Method -->
-              <!--
+
               <section>
                 <h2>Discrete Element Method</h2>
-		 <div style="float: left; width: 50%;">
-		  <ul>
-		    <li> Particle level interaction based on Newton's equation
-		    of motion</li><br />
-		    <li> The contact force is computed as: </li><br />
-		    <div class="block" style="clear: both; width: 85%">
-		    $F_n=\left\{ \begin{matrix} \text{              }0\text{         },\text{ }{{\delta }_{n}}>0  \\
-	   -{{k}_{n}}{{\delta }_{n}}-{{\gamma }_{n}}\frac{d{{\delta }_{n}}}{dt},\text{ }{{\delta }_{n}}<0  \\
-	\end{matrix} \right.$
-		    </div>
-		    <br />
-		    <li> The Newton's equation of motion </li><br />
-		    <div class="block" style="clear: both; width: 45%">
-		    $F_n =m \times a $
-		    </div>
-		  </ul>
-		</div>
-		 <div style="float: right; width: 50%;">
-		  <video  width="90%" autoplay controls loop>
-		    <source src="media/tennis_balls.webm" type="video/webm">
-	  	      Your browser does not support the video tag.
-		  </video>
-		</div>
+          		 <div style="float: left; width: 50%;">
+          		  <ul>
+          		    <li> Particle level interaction based on Newton's equation
+          		    of motion</li><br />
+          		    <li> The contact force is computed as: </li><br />
+          		    <div class="block" style="clear: both; width: 85%">
+          		    $F_n=\left\{ \begin{matrix} \text{              }0\text{         },\text{ }{{\delta }_{n}}>0  \\
+          	   -{{k}_{n}}{{\delta }_{n}}-{{\gamma }_{n}}\frac{d{{\delta }_{n}}}{dt},\text{ }{{\delta }_{n}}<0  \\
+          	\end{matrix} \right.$
+          		    </div>
+          		    <br />
+          		    <li> The Newton's equation of motion </li><br />
+          		    <div class="block" style="clear: both; width: 45%">
+          		    $F_n =m \times a $
+          		    </div>
+          		  </ul>
+          		</div>
+          		 <div style="float: right; width: 50%;">
+          		  <video  width="90%" autoplay controls loop>
+          		    <source src="media/tennis_balls.webm" type="video/webm">
+          	  	      Your browser does not support the video tag.
+          		  </video>
+          		</div>
               </section>
-              -->
+
 
               <!-- Mesh based vs Mesh-free approach -->
               <section>
@@ -224,16 +274,16 @@
               </section>
 
               <!-- Material Point Method -->
-              <!--
+
               <section>
                 <h2>Material Point Method</h2>
-	        <figure>
-	          <img style = "border:0;" src="images/mpm_soil.png" width="100%">
-	          <figcaption style = "font-size: 80%; text-align: center; ">
-		    Porosity in MPM </figcaption>
-	        </figure>
+	               <figure>
+	                  <img style = "border:0;" src="images/mpm_soil.png" width="100%">
+	                   <figcaption style = "font-size: 80%; text-align: center; ">
+		                     Porosity in MPM </figcaption>
+	               </figure>
               </section>
-              -->
+
 
               <!-- Material Point Method -->
               <section>
@@ -346,6 +396,7 @@
                   <source src="media/mpm_100j.webm" type="video/webm">
                     Your browser does not support the video tag.
                 </video>
+                <p>Horizontal velocity (m/s)</p>
               </section>
 
 
@@ -906,10 +957,10 @@
                 </div>
                 <div style="float: right; width: 49%;">
                   <figure>
-		    <img style = "border:0;" src="images/ke_dense_slope.png" width = "100%">
-		    <figcaption style = "font-size: 80%; text-align: center;">Dense</figcaption>
-		  </figure>
-	        </div>
+		                <img style = "border:0;" src="images/ke_dense_slope.png" width = "100%">
+		                <figcaption style = "font-size: 80%; text-align: center;">Dense</figcaption>
+		              </figure>
+	              </div>
                 <br/>Kinetic energy evolution
               </section>
 
@@ -1006,12 +1057,11 @@
               -->
 
               <!-- CPU v GPU -->
-              <!--
+
               <section>
                 <h3>GPU programming</h3>
                 <img style = "border:0;" src="images/gpu_concept.png" width ="80%">
               </section>
-              -->
 
               <!--LBM DEM 10,000 particles-->
               <section>
@@ -1045,122 +1095,6 @@
                   <source src="media/3d-lbm-multiphase.webm" type="video/webm">
                     Your browser does not support the video tag.
                 </video>
-              </section>
-            </section>
-
-
-            <!-- Lattice Element Method -->
-            <section>
-              <!-- Lattice Element Method -->
-              <section>
-                <h2>Lattice Element Method</h2>
-                <div style="float: left; width: 50%;">
-	          <figure>
-	            <img style = "border:0;" src="images/lem.png" style="width:80%">
-	          </figure>
-	        </div>
-                <div style="float: right; width: 50%;">
-	          <figure>
-	            <img style = "border:0;" src="images/voro.png" width="100%">
-	          </figure>
-	        </div>
-              </section>
-
-              <!-- Tension test -->
-              <section>
-                <h2>LEM Tension test</h2>
-                <figure>
-	          <img style = "border:0;" src="images/lem_tension_test.png" style="width:100%">
-	        </figure>
-	      </section>
-
-              <!-- Tension test -->
-              <section>
-                <h2>LEM: Tension test (uniform)</h2>
-                <div style="float: left; width: 50%;">
-                  <video  id="lem_uniform" width="100%">
-                    <source src="media/tension_uniform_disp.webm" type="video/webm">
-                      Your browser does not support the video tag.
-                  </video>
-	        </div>
-                <div style="float: right; width: 50%;">
-                  <video id="lem_uniform_crack" width="100%">
-                    <source src="media/tension_uniform_crack.webm" type="video/webm">
-                      Your browser does not support the video tag.
-                  </video>
-	        </div>
-                <div class="media-buttons">
-                  <input type="button" id="play-button" onclick="PlayVideo('lem_uniform');PlayVideo('lem_uniform_crack')"; this.disable=true; pause-button.disable=false; value="Play" />
-                  <input type="button" id="pause-button" onclick="PauseVideo('lem_uniform');PauseVideo('lem_uniform_crack')"; this.disable=true; play-button.disable=false; value="Pause" />
-                </div>
-              </section>
-
-              <!-- Tension test -->
-              <section>
-                <h2>LEM: Tension test (Log-Normal 1.0)</h2>
-                <div style="float: left; width: 50%;">
-                  <video id="lem_ln1"  width="100%">
-                    <source src="media/tension_ln1.0_disp.webm" type="video/webm">
-                      Your browser does not support the video tag.
-                  </video>
-	        </div>
-                <div style="float: right; width: 50%;">
-                  <video id="lem_ln1_crack" width="100%">
-                    <source src="media/tension_ln1.0_crack.webm" type="video/webm">
-                      Your browser does not support the video tag.
-                  </video>
-	        </div>
-                <div class="media-buttons">
-                  <input type="button" id="play-button" onclick="PlayVideo('lem_ln1');PlayVideo('lem_ln1_crack')"; this.disable=true; pause-button.disable=false; value="Play" />
-                  <input type="button" id="pause-button" onclick="PauseVideo('lem_ln1');PauseVideo('lem_ln1_crack')"; this.disable=true; play-button.disable=false; value="Pause" />
-                </div>
-              </section>
-
-
-              <!-- Tension test -->
-              <section>
-                <h2>LEM Tension test</h2>
-                <div style="float: left; width: 50%;">
-                  <figure>
-	            <img style = "border:0;" src="images/tension_uniform_crack.png" style="width:100%">
-                    <figcaption>Uniform</figcaption>
-	          </figure>
-	        </div>
-                <div style="float: right; width: 50%;">
-                  <figure>
-	            <img style = "border:0;" src="images/tension_ln1.0_crack.png" style="width:100%">
-                    <figcaption>LogNormal 1.0</figcaption>
-	          </figure>
-	        </div>
-              </section>
-
-              <!-- LEM Fluid coupling -->
-              <section>
-                <h2>Lattice Element Method - Fluid coupling</h2>
-                <div style="float: left; width: 50%;">
-                  <figure>
-	            <img style = "border:0;" src="images/pipe-network.png" style="width:80%">
-	          </figure>
-	        </div>
-                <div style="float: right; width: 50%;">
-	          <ul>
-	            <li>First assume injection pressure $P_{in}$ and injection rate $Q_{in}$ at injection point</li>
-                    <li>Solve fluid pressure at each fluid node</li>
-                    <li>Convert pressure to node force and solve LEM to update fracture aperture</li>
-                    <li>Repeat the above process until convergence</li>
-	          </ul>
-	          $$q = - \frac{h^3}{12\mu}\frac{dp}{dx}$$
-  	        </div>
-              </section>
-
-              <!-- LEM Hydraulic fracturing -->
-              <section>
-                <h2>LEM hydraulic fracturing</h2>
-                <video  width="100%" controls loop>
-                  <source src="media/lem.webm" type="video/webm">
-                    Your browser does not support the video tag.
-                </video>
-                <p>Wong et al., 2016</p>
               </section>
             </section>
 
