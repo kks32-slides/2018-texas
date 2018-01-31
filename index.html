@@ -57,31 +57,6 @@
                <!-- King's College Cambridge -->
                <section data-background="images/kings.jpg" data-background-size="100%">
                </section>
-               <!-- Numerical methods -->
-               <section>
-                  <h3>Cambridge-Berkeley Computational Geomechanics</h3>
-                  <ul>
-                     <li> Material Point Method </li>
-                     <li> Lattice-Boltzmann + Discrete Element Method </li>
-                     <li> Finite Element Method - Thermo-Hydro Mechanical Coupling</li>
-                     <li> Lattice Element Method </li>
-                  </ul>
-                  <figure>
-                     <img style = "border:0;" src="images/themes/cb-geo.png" width ="100%">
-                     <figcaption><a href="http://www.cb-geo.com">View the CB-Geo website for
-                        more information and software tools</a>
-                     </figcaption>
-                  </figure>
-               </section>
-               <!-- LEM Hydraulic fracturing -->
-               <section>
-                  <h2>LEM hydraulic fracturing</h2>
-                  <video  width="100%" controls loop>
-                     <source src="media/lem.webm" type="video/webm">
-                     Your browser does not support the video tag.
-                  </video>
-                  <p>Wong et al., 2016</p>
-               </section>
                <!-- ABM -->
                <section>
                   <h2>Agent Based Modelling of cities</h2>
@@ -126,6 +101,31 @@
                      </figcaption>
                   </figure>
                </section>
+               <!-- Numerical methods -->
+               <section>
+                  <h3>Cambridge-Berkeley Computational Geomechanics</h3>
+                  <ul>
+                     <li> Material Point Method </li>
+                     <li> Lattice-Boltzmann + Discrete Element Method </li>
+                     <li> Finite Element Method - Thermo-Hydro Mechanical Coupling</li>
+                     <li> Lattice Element Method </li>
+                  </ul>
+                  <figure>
+                     <img style = "border:0;" src="images/themes/cb-geo.png" width ="100%">
+                     <figcaption><a href="http://www.cb-geo.com">View the CB-Geo website for
+                        more information and software tools</a>
+                     </figcaption>
+                  </figure>
+               </section>
+               <!-- LEM Hydraulic fracturing -->
+               <section>
+                  <h2>LEM hydraulic fracturing</h2>
+                  <video  width="100%" controls loop>
+                     <source src="media/lem.webm" type="video/webm">
+                     Your browser does not support the video tag.
+                  </video>
+                  <p>Wong et al., 2016</p>
+               </section>
             </section>
             <section>
                <!-- Aerial landslides -->
@@ -140,14 +140,14 @@
                </section>
                <section>
                   <h2>Aerial landslides</h2>
-                  <img style = "border:0;" src="images/afghan_landslide.jpg" width="80%">
+                  <img style = "border:0;" src="images/afghan_landslide.jpg" width="85%">
                   <figcaption>
                      Afghanistan landslide - 2014 (Source: Boston Globe, 2014).
                   </figcaption>
                </section>
                <section>
                   <h2>Oso landslide (2014)</h2>
-                  <img src="images/oso_landslide.png" width="80%">
+                  <img style = "border:0;" src="images/oso_landslide.png" width="100%">
                </section>
                <section>
                   <h2>Granular column collapse</h2>
@@ -507,8 +507,8 @@
                         </figcaption>
                      </figure>
                      <p> Smagorinsky model (LES):</p>
-                     $\nu_{s}(x,t)=(C_s \Delta)^2\sqrt{S_{ij}S_{ij}} \mbox{  ;  } S_{ij}=\frac{1}{2}(\frac{\partial u_i}{\partial x_j}+\frac{\partial u_j}{\partial x_i})$
-                     <video  id="Karman" width="120%" controls>
+                     <!--$\nu_{s}(x,t)=(C_s \Delta)^2\sqrt{S_{ij}S_{ij}} \mbox{  ;  } S_{ij}=\frac{1}{2}(\frac{\partial u_i}{\partial x_j}+\frac{\partial u_j}{\partial x_i})$-->
+                     <video  id="Karman" width="120%" autoplay loop controls>
                         <source src="media/karman.webm" type="video/webm">
                         Your browser does not support the video tag.
                      </video>
@@ -700,6 +700,13 @@
                         </figcaption>
                      </figure>
                   </div>
+                  <div class="block" style="clear:both">
+                    <p>
+                      <br/>
+                      250 - particle at the bottom of the flow; <br/>
+                      872 - particle at middle of the flow; 1007 -  particle at the surface of the flow
+                    </p>
+                  </div>
                </section>
                <!-- Effect of permeability -->
                <section>
@@ -708,7 +715,7 @@
                      <figure>
                         <img style = "border:0;" src="images/pressure-velocity.png" width="100%">
                         <figcaption>
-                           normalised pressure v velocity
+                           normalised pressure vs. velocity
                         </figcaption>
                      </figure>
                   </div>
@@ -716,7 +723,7 @@
                      <figure>
                         <img style = "border:0;" src="images/shear-velocity.png" width="100%">
                         <figcaption>
-                           normalised shear v velocity
+                           normalised shear vs. velocity
                         </figcaption>
                      </figure>
                   </div>
@@ -782,6 +789,7 @@
                   <br/>aspect ratio 'a' of 6 on a slope of 5*<br />
                </section>
                <!-- Collapse of a 0.8 on slope 5 -->
+               <!--
                <section>
                   <h2>Collapse of a dense column on an inclined plane</h2>
                   <figure>
@@ -789,7 +797,9 @@
                      <figcaption>aspect ratio 'a' of 0.8 on a slope of 5* (dense)</figcaption>
                   </figure>
                </section>
+               -->
                <!-- Collapse of a 0.8 on slope 5 -->
+               <!--
                <section>
                   <h2>Collapse of a dense column on an inclined plane</h2>
                   <figure>
@@ -797,6 +807,7 @@
                      <figcaption>aspect ratio 'a' of 0.8 on a slope of 5* (dense)</figcaption>
                   </figure>
                </section>
+               -->
                <!-- Collapse of a 0.8 on slopes: dense -->
                <section>
                   <h2>Collapse of a dense column on slopes: runout</h2>
@@ -866,20 +877,18 @@
                <!-- Collapse of a 0.8 on slopes: loose v dense -->
                <section>
                   <h2>Loose v dense: Runout phase</h2>
-                  <div style="float: left; width: 49%; broder:0">
+                  <div style="align=center; width: 100%; broder:0">
                      <figure>
-                        <img style = "border:0;" src="images/slope5_loose_15d_water_entrainment.png" width ="100%">
+                        <img style = "border:0;" src="images/slope5_loose_15d_water_entrainment.png" width ="60%">
                         <figcaption style = "font-size: 80%; text-align: center; ">Loose</figcaption>
                      </figure>
-                  </div>
-                  <div style="float: right; width: 51%;">
                      <figure>
-                        <img style = "border:0;" src="images/slope5_dense_15d_water_entrainment.png" width = "100%">
+                        <img style = "border:0;" src="images/slope5_dense_15d_water_entrainment.png" width = "60%">
                         <figcaption style = "font-size: 80%; text-align: center;">Dense</figcaption>
                      </figure>
                   </div>
                   <div style="clear:both">
-                     <br/>Water entrainment front (~15d length) at a slope of 5*
+                     Water entrainment front (~15d length) at a slope of 5*
                   </div>
                </section>
                <!-- Collapse of a 0.8 on slopes: loose v dense -->
