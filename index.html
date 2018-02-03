@@ -139,7 +139,11 @@
                </section>
                <section>
                   <h2>Oso landslide (2014)</h2>
-                  <img style = "border:0;" src="images/oso_landslide.png" width="100%">
+                  <figure>
+                    <img style = "border:0;" src="images/oso_landslide.png" width="100%">
+                    <figcaption>8 million cubic meters of glacial deposits and water-filled debris material transported
+                      to a distance of 1 km (Haugerud., 2014).</figcaption>
+                  </figure>
                </section>
                <section>
                   <h2>Granular column collapse</h2>
@@ -224,15 +228,15 @@
                <!-- Simple shear -->
                <section>
                   <h2>Micro to Macro</h2>
-                  <div style="float: left; width: 40%;">
+                  <div style="float: left; width: 35%;">
                      <figure>
-                        <img style = "border:0;" src="images/simple_shear.png" width="70%">
+                        <img style = "border:0;" src="images/simple_shear.png" width="77%">
                         <figcaption>
                            Simple shear test
                         </figcaption>
                      </figure>
                   </div>
-                  <div style="float: right; width: 60%;">
+                  <div style="float: right; width: 65%;">
                      <figure>
                         <img style = "border:0;" src="images/sxy_vs_syy.png" width="100%">
                         <figcaption>
@@ -298,6 +302,10 @@
                         </figcaption>
                      </figure>
                   </div>
+                  <div style="clear: both;">
+                    <br/>
+                    Collisional dissipation mechanism is missing in the continuum approach.
+                  </div>
                </section>
                <!-- MPM slope -->
                <section>
@@ -341,7 +349,7 @@
                      <source src="media/selborne.webm" type="video/webm">
                      Your browser does not support the video tag.
                   </video>
-                  <p>Selborne case study (Alonso et al., 2016)</p>
+                  <p>Selborne case study of a 15 m high slope (Soga et al., 2016)</p>
                </section>
             </section>
             <!-- Underwater landslides -->
@@ -367,7 +375,7 @@
                      <source src="media/mpm-submarine-landslide.webm" type="video/webm">
                      Your browser does not support the video tag.
                   </video>
-                  <p>(Taka et al., 2012)</p>
+                  <p>Depth-averaged Material Point Method (Taka et al., 2012)</p>
                </section>
                <!-- Landslide mechanism -->
                <section>
@@ -379,6 +387,11 @@
                      <li>Target: Clay‐rich flow (Less diffusive, Hydroplaning).</li>
                   </ul>
                </section>
+               <!-- Mechanism of runout-->
+               <section>
+                  <h2>Mechanism of submarine runout</h2>
+                  <img style = "border:0;" src="images/water_entrainment.png" width="100%">
+               </section>
                <!-- MPM Water entrainment -->
                <section>
                   <h2>MPM submarine landslide: Water entrainment</h2>
@@ -386,16 +399,11 @@
                      <source src="media/slope-water-entrainment.webm" type="video/webm">
                      Your browser does not support the video tag.
                   </video>
-                  <p>(Taka et al., 2012)</p>
-               </section>
-               <!-- Mechanism of runout-->
-               <section>
-                  <h2>Mechanism of submarine runout</h2>
-                  <img style = "border:0;" src="images/water_entrainment.png" width="100%">
+                  <p>Run-out for different water entrainment (Taka et al., 2012)</p>
                </section>
                <!-- LBM DEM a6 -->
                <section>
-                  <h3>LBM - DEM simulation of granular collapse in fluid</h3>
+                  <h3>LBM - DEM simulation of granular collapse in a fluid</h3>
                   <br/>
                   <video  width="100%" controls loop>
                      <source src="media/a6.webm" type="video/webm">
@@ -507,17 +515,17 @@
                      <br/>Karman Vortex Street
                   </div>
                </section>
-               <!-- Collapse in fluid -->
+               <!-- Collapse in a fluid -->
                <section>
-                  <h3>Collapse in fluid</h3>
+                  <h3>Collapse in a fluid</h3>
                   <figure>
                      <img style = "border:0;" src = "images/geometry.png" width="85%">
-                     <figcaption style="text-size: 60%"> Collapse in fluid ('a'=0.8)</figcaption>
+                     <figcaption style="text-size: 60%"> Collapse in a fluid ('a'=0.8)</figcaption>
                   </figure>
                </section>
                <!-- LBM fluid collapse a0.4 and a4 -->
                <section>
-                  <h2>Granular collapse in fluid: Effect of aspect ratio</h2>
+                  <h2>Granular collapse in a fluid: Effect of aspect ratio</h2>
                   <div class="video">
                      <br />
                      <video id="a04" width="80%" >
@@ -536,9 +544,9 @@
                      <input type="button" id="pause-button" onclick="PauseVideo('a04');PauseVideo('a4')"; this.disable=true; play-button.disable=false; value="Pause" />
                   </div>
                </section>
-               <!-- Collapse in fluid runout evolution -->
+               <!-- Collapse in a fluid runout evolution -->
                <section>
-                  <h2>Collapse in fluid: Runout evolution</h2>
+                  <h2>Collapse in a fluid: Runout evolution</h2>
                   <div style="float: left; width: 50%;">
                      <figure>
                         <img style = "border:0;" src="images/runout_a04f.png" width="100%">
@@ -563,7 +571,7 @@
                </section>
                <!-- LBM DEM a8 -->
                <section>
-                  <h3>LBM - DEM simulation of granular collapse in fluid</h3>
+                  <h3>LBM - DEM simulation of granular collapse in a fluid</h3>
                   <br/>
                   <video  width="100%" controls loop>
                      <source src="media/a8.webm" type="video/webm">
@@ -574,14 +582,15 @@
                </section>
                <!-- Runout v aspect ratio -->
                <section>
-                  <h2>Runout: dry vs. fluid</h2>
+                  <h2>Runout: dry vs fluid</h2>
                   <figure>
                      <img style = "border:0;" src="images/runout_fluid_dry.png" width="80%">
+                     <figcaption style = "font-size: 80%; text-align: center; "><br />Dry collapse flowed further than the underwater collapse</figcaption>
                   </figure>
                </section>
                <!-- Hydrodynamic radius -->
                <section>
-                  <h2>Collapse in fluid: Effect of permeability</h2>
+                  <h2>Collapse in a fluid: Effect of permeability</h2>
                   <p>
                      Dirichlet boundary conditions constrain the pressure/density at the boundaries (Zou and He, 1997)
                      <br />
@@ -604,7 +613,7 @@
                </section>
                <!-- Effect of permeability -->
                <section>
-                  <h2>Collapse in fluid: Effect of permeability</h2>
+                  <h2>Collapse in a fluid: Effect of permeability</h2>
                   <video id="r07r" width="80%" >
                      <source src="media/a08_r07.webm" type="video/webm">
                      Your browser does not support the video tag.
@@ -653,13 +662,13 @@
                </section>
                <!-- Effect of permeability -->
                <section>
-                  <h2>Collapse in fluid: Effect of permeability</h2>
+                  <h2>Collapse in a fluid: Effect of permeability</h2>
                   <h4>Hydrodynamic force (x-dir)</h4>
                   <div style="float: left; width: 50%;">
                      <figure>
                         <img style = "border:0;" src="images/dense-fhf-r07.png" width="100%">
                         <figcaption>
-                           r = 0.7R
+                           High permeability (r = 0.7R)
                         </figcaption>
                      </figure>
                   </div>
@@ -667,7 +676,7 @@
                      <figure>
                         <img style = "border:0;" src="images/dense-fhf-r095.png" width="100%">
                         <figcaption>
-                           r = 0.95R
+                           Low permeability (r = 0.95R)
                         </figcaption>
                      </figure>
                   </div>
@@ -678,13 +687,13 @@
                </section>
                <!-- Effect of permeability -->
                <section>
-                  <h2>Collapse in fluid: Effect of permeability</h2>
+                  <h2>Collapse in a fluid: Effect of permeability</h2>
                   <h4>Hydrodynamic force (x-dir)</h4>
                   <div style="float: left; width: 50%;">
                      <figure>
                         <img style = "border:0;" src="images/dense_r07_fhfx.png" width="100%">
                         <figcaption>
-                           r = 0.7R
+                           High permeability (r = 0.7R)
                         </figcaption>
                      </figure>
                   </div>
@@ -692,7 +701,7 @@
                      <figure>
                         <img style = "border:0;" src="images/dense_r095_fhfx.png" width="100%">
                         <figcaption>
-                           r = 0.95R
+                           Low permeability (r = 0.95R)
                         </figcaption>
                      </figure>
                   </div>
@@ -706,7 +715,7 @@
                </section>
                <!-- Effect of permeability -->
                <section>
-                  <h2>Collapse in fluid: Effect of permeability</h2>
+                  <h2>Collapse in a fluid: Effect of permeability</h2>
                   <div style="float: left; width: 50%;">
                      <figure>
                         <img style = "border:0;" src="images/pressure-velocity.png" width="100%">
@@ -749,12 +758,12 @@
                </section>
                <!-- Effect of permeability -->
                <section>
-                  <h2>Effect of permeability: drag vs. hydroplaning</h2>
+                  <h2>Effect of permeability: drag vs hydroplaning</h2>
                   <div style="float: left; width: 50%;">
                      <figure>
                         <img style = "border:0;" src="images/lbm07dense_streamlines.png" width="100%">
                         <figcaption>
-                           r = 0.7 R
+                           High permeability (r = 0.7 R)
                         </figcaption>
                      </figure>
                   </div>
@@ -762,14 +771,17 @@
                      <figure>
                         <img style = "border:0;" src="images/lbm095dense_streamlines.png" width="100%">
                         <figcaption>
-                           r = 0.95 R
+                           Low permeability (r = 0.95 R)
                         </figcaption>
                      </figure>
+                  </div>
+                  <div style="clear:both;">
+                    <br/>High permeable flow front experience drag, while low permeable flow experience hydroplaning.
                   </div>
                </section>
                <!-- Runout v aspect ratio -->
                <section>
-                  <h2>Effect of permeability: runout</h2>
+                  <h2>Effect of permeability: runout (loose)</h2>
                   <figure>
                      <img style = "border:0;" src="images/runout_a08_loose.png" width="80%">
                      <figcaption>aspect ratio 0.8 (loose)</figcaption>
