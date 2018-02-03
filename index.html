@@ -739,14 +739,15 @@
                <!-- Effect of permeability -->
                <section>
                   <h2>Collapse in a fluid: Effect of permeability</h2>
-                  <div style="float: left; width: 50%;">
+                  <div style="float: left; width: 100%;">
                      <figure>
-                        <img style = "border:0;" src="images/pressure-velocity.png" width="100%">
+                        <img style = "border:0;" src="images/pressure-velocity.png" width="55%">
                         <figcaption>
                            normalised pressure vs. velocity
                         </figcaption>
                      </figure>
                   </div>
+                  <!--
                   <div style="float: right; width: 50%;">
                      <figure>
                         <img style = "border:0;" src="images/shear-velocity.png" width="100%">
@@ -755,6 +756,7 @@
                         </figcaption>
                      </figure>
                   </div>
+                -->
                </section>
                <!-- Effect of permeability -->
                <section>
@@ -822,7 +824,6 @@
                   <br/>aspect ratio 'a' of 6 on a slope of 5*<br />
                </section>
                <!-- Collapse of a 0.8 on slope 5 -->
-               <!--
                <section>
                   <h2>Collapse of a dense column on an inclined plane</h2>
                   <figure>
@@ -830,9 +831,7 @@
                      <figcaption>aspect ratio 'a' of 0.8 on a slope of 5* (dense)</figcaption>
                   </figure>
                </section>
-               -->
                <!-- Collapse of a 0.8 on slope 5 -->
-               <!--
                <section>
                   <h2>Collapse of a dense column on an inclined plane</h2>
                   <figure>
@@ -840,7 +839,6 @@
                      <figcaption>aspect ratio 'a' of 0.8 on a slope of 5* (dense)</figcaption>
                   </figure>
                </section>
-               -->
                <!-- Collapse of a 0.8 on slopes: dense -->
                <section>
                   <h2>Collapse of a dense column on slopes: runout</h2>
@@ -856,23 +854,6 @@
                      <img style = "border:0;" src="images/runout_loose_slope.png" width="80%">
                      <figcaption>aspect ratio 'a' of 0.8 (loose)</figcaption>
                   </figure>
-               </section>
-               <!-- Collapse of a 0.8 on slopes: loose v dense -->
-               <section>
-                  <h2>Collapse on slopes: loose v dense</h2>
-                  <div style="float: left; width: 49%;">
-                     <figure>
-                        <img style = "border:0;" src="images/ke_loose_slope.png" width ="100%">
-                        <figcaption style = "font-size: 80%; text-align: center; ">Loose</figcaption>
-                     </figure>
-                  </div>
-                  <div style="float: right; width: 49%;">
-                     <figure>
-                        <img style = "border:0;" src="images/ke_dense_slope.png" width = "100%">
-                        <figcaption style = "font-size: 80%; text-align: center;">Dense</figcaption>
-                     </figure>
-                  </div>
-                  <br/>Kinetic energy evolution
                </section>
                <!-- Collapse of a 0.8 on slopes: loose v dense -->
                <section>
@@ -934,6 +915,23 @@
                </section>
                <!-- Collapse of a 0.8 on slopes: loose v dense -->
                <section>
+                  <h2>Collapse on slopes: loose v dense</h2>
+                  <div style="float: left; width: 49%;">
+                     <figure>
+                        <img style = "border:0;" src="images/ke_loose_slope.png" width ="100%">
+                        <figcaption style = "font-size: 80%; text-align: center; ">Loose</figcaption>
+                     </figure>
+                  </div>
+                  <div style="float: right; width: 49%;">
+                     <figure>
+                        <img style = "border:0;" src="images/ke_dense_slope.png" width = "100%">
+                        <figcaption style = "font-size: 80%; text-align: center;">Dense</figcaption>
+                     </figure>
+                  </div>
+                  <br/>Kinetic energy evolution
+               </section>
+               <!-- Collapse of a 0.8 on slopes: loose v dense -->
+               <section>
                   <h2>Loose v dense: Settlement phase</h2>
                   <figure>
                      <img style = "border:0;" src="images/voronoi_slope_dense_loose.png" width="80%">
@@ -971,9 +969,8 @@
                   <br/>
                   <ul>
                   <li> LBM Nodes = 50 Million : DEM grains = 10000 discs </li>
-                  <li> Real-time = 2 seconds </li>
                   <li> Run-time = 4 hours </li>
-                  <li> Speedup = 25x on a Tesla K20</li>
+                  <li> Speedup = 25x on a Pascal P100</li>
                </section>
                <!-- 2D to 3D -->
                <section>
